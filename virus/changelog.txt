@@ -1,0 +1,18 @@
+# Changelog
+
+## [1.0.1] - 2023 - 04 - 14
+
+### added
+- modifica del programma virus.c, aggiunta funzione per la creazione del file batch (ancora in fase di testing),
+adesso il virus e in grado di generare file txt e di scrivere in ognuno di essi all'infinito all'interno di una cartella
+
+
+## [1.0.1] - 2023 - 04 - 14
+
+### added
+
+- aggiunto eseguibile virus
+- aggiunto changelog.txt
+- aggiunto README.md
+- aggiunto trace.log
+- aggiunto codice sorgente virus.c
