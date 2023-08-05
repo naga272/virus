@@ -23,7 +23,7 @@ int main(int argc, char *argv[]){
 	for(n_file = 0;;n_file++)
 		pthread_create(&multi_thread, NULL, infinity, (void*)n_file);
 	pthread_join(multi_thread, NULL);
-	return 0;
+	return EXIT_SUCCESS;
 }
 
 
